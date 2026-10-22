@@ -43,6 +43,14 @@ Aplicación web desarrollada con Laravel para gestionar una lista de tareas.
 
 7. Abrir `http://127.0.0.1:8000` en el navegador.
 
-## Notas
+## Proceso de creación e implementación técnica
 
-Proyecto desarrollado como ejercicio práctico de Laravel.
+La aplicación se ha desarrollado siguiendo la estructura MVC de Laravel.
+
+En primer lugar, se procedió a la creación del modelo y la migración, donde se definen los atributos de las tareas y las validaciones para comprobar que los campos tengan los requerimientos esperados. Se establece también la interacción del modelo con la base de datos, mediante Eloquent ORM.
+
+Luego, se creó el controlador, donde se definen las peticiones para crear, listar y cambiar el estado de las tareas.
+
+Mediante las rutas, se cumplimenta el funcionamiento de los endpoints, en este caso GET, POST y PUT.
+
+Por último, en la vista se muestra el formulario y la creación y listado de tareas. Cabe destacar que se ha aplicado seguridad básica con CSRF, para así validar en el servidor los datos.
